@@ -19,21 +19,3 @@
 }
 }
 
-// User decides if he needs to check
-// {
-//   "manifest_version": 3,
-//   "name": "Phishing Detector",
-//   "version": "1.0",
-//   "description": "Check if the current page is phishing using a local FastAPI model.",
-//   "permissions": ["tabs", "activeTab"],
-//   "host_permissions": ["http://127.0.0.1:8000/*"],
-//   "action": {
-//     "default_title": "Check for phishing",
-//     "default_popup": "popup.html",
-//     "default_icon": {
-//       "16": "icons/icon16.png",
-//       "48": "icons/icon48.png",
-//       "128": "icons/icon128.png"
-//     }
-//   }
-// }
