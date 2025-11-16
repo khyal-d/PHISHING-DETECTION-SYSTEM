@@ -32,3 +32,4 @@ def predict_url_features(feature_dict_or_series, artifacts_path="phish_artifacts
         "label": y_pred,
         "phishing_probability": float(y_proba) if np.isscalar(y_proba) else np.nan
     }
+ 

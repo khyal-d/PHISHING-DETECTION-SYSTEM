@@ -7,7 +7,7 @@ from .config import *
 def tokenize_url_words(url: str):
     lowered = url.lower()
     cleaned = re.sub(r'[/:?=&\.\-_~%\+]+', ' ', lowered)
-    words = [w for w in cleaned.split() if w]
+    words = [w for w in cleaned.split() if w] 
     return words
 
 def parse_url_bits(url: str):
