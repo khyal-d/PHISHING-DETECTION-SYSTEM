@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Phishing Detector</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="container">
+    <h1>Phishing Check</h1>
+
+    <label for="urlInput">URL</label>
+    <input id="urlInput" type="text" placeholder="https://example.com" />
+
+    <button id="checkButton">Check URL</button>
+
+    <div id="status"></div>
+    <div id="result"></div>
+  </div>
+
+  <!-- Use ES modules so we can import from api.js -->
+  <script type="module" src="popup.js"></script>
+</body>
+</html>

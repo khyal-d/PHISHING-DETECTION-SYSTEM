@@ -1,9 +1,21 @@
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
+from fastapi.middleware.cors import CORSMiddleware
 
 from main import get_phishing_results 
 
 app = FastAPI(title="Phishing Detection API")
+
+
+# this is to Allow requests from anywhere (fine for local dev)
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],          # i will restrict this  later
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
 
 class URLRequest(BaseModel):
     url: str
